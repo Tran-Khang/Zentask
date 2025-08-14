@@ -1,0 +1,6 @@
+# Bỏ qua các file đã được biên dịch của Python
+__pycache__/
+*.pyc
+
+# Bỏ qua các file hệ thống của macOS
+.DS_Store
