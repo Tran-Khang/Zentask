@@ -1,0 +1,1221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>688</width>
+    <height>823</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>-10</y>
+      <width>1111</width>
+      <height>641</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(253, 176, 187);</string>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="page_home">
+     <widget class="QWidget" name="horizontalLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>200</y>
+        <width>321</width>
+        <height>91</height>
+       </rect>
+      </property>
+      <layout class="QHBoxLayout" name="horizontalLayout_3">
+       <item>
+        <widget class="QLabel" name="h">
+         <property name="font">
+          <font>
+           <family>DS-Digital</family>
+           <pointsize>64</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+color: rgb(26, 26, 26);</string>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="h_2">
+         <property name="font">
+          <font>
+           <family>DS-Digital</family>
+           <pointsize>64</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+color: rgb(26, 26, 26);</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="m">
+         <property name="font">
+          <font>
+           <family>DS-Digital</family>
+           <pointsize>64</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+color: rgb(12, 12, 12);</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;00&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="h_3">
+         <property name="font">
+          <font>
+           <family>DS-Digital</family>
+           <pointsize>64</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+color: rgb(26, 26, 26);</string>
+         </property>
+         <property name="text">
+          <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="s">
+         <property name="font">
+          <font>
+           <family>DS-Digital</family>
+           <pointsize>64</pointsize>
+           <weight>75</weight>
+           <italic>false</italic>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: none;
+
+color: rgb(17, 17, 17);</string>
+         </property>
+         <property name="text">
+          <string>00</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QComboBox" name="comboBoxTime">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>220</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* ComboBox nền và viền */
+QComboBox {
+    background-color: rgba(224, 233, 245, 0.9); /* #E0E9F5 */
+    color: rgba(58, 58, 58, 1);                 /* #3A3A3A */
+    border: 1px solid rgba(176, 196, 222, 1);   /* #B0C4DE */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+/* ComboBox khi nhấn */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid rgba(160, 180, 210, 1);
+    background-color: rgba(198, 214, 235, 0.8); /* #C6D6EB */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgba(240, 245, 255, 0.95);
+    selection-background-color: rgba(143, 191, 224, 0.6);
+    selection-color: rgba(40, 40, 40, 1);
+    border: 1px solid rgba(143, 191, 224, 0.6);
+    font-size: 13px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnApplyTime">
+      <property name="geometry">
+       <rect>
+        <x>430</x>
+        <y>220</y>
+        <width>261</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+      </property>
+      <property name="text">
+       <string>Xác nhận thời gian theo phương án</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>470</x>
+        <y>360</y>
+        <width>201</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;
+color: rgb(26, 26, 26);</string>
+      </property>
+      <property name="text">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align=&quot;center&quot;&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Chọn cách bạn muốn học&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="comboBoxStudy">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>360</y>
+        <width>321</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">/* ComboBox nền và viền */
+QComboBox {
+    background-color: rgba(224, 233, 245, 0.9); /* #E0E9F5 */
+    color: rgba(58, 58, 58, 1);                 /* #3A3A3A */
+    border: 1px solid rgba(176, 196, 222, 1);   /* #B0C4DE */
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+/* ComboBox khi nhấn */
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+    border-left: 1px solid rgba(160, 180, 210, 1);
+    background-color: rgba(198, 214, 235, 0.8); /* #C6D6EB */
+}
+
+QComboBox QAbstractItemView {
+    background-color: rgba(240, 245, 255, 0.95);
+    selection-background-color: rgba(143, 191, 224, 0.6);
+    selection-color: rgba(40, 40, 40, 1);
+    border: 1px solid rgba(143, 191, 224, 0.6);
+    font-size: 13px;
+}</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="layoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>310</y>
+        <width>461</width>
+        <height>232</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btnOpenPopup">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Máy tính</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="2">
+        <widget class="QPushButton" name="startButton_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Bật nhạc nền</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QPushButton" name="btnOpenPopup_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Nháp</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="1">
+        <widget class="QPushButton" name="btnOpenPopup_3">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Phụ đề tự động</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="startButton_up">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Tính thời gian </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QPushButton" name="addwaystudy">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Thêm cách bạn học </string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <widget class="QPushButton" name="BTNopenflashcard">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Mở flashcard</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="pauseButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Pause</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QPushButton" name="startButton">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Start</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="2">
+        <widget class="QPushButton" name="pushReset">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Reset</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QPushButton" name="startButton_2">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Tắt nhạc nền</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QPushButton" name="pauseButton_up">
+         <property name="styleSheet">
+          <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+         </property>
+         <property name="text">
+          <string>Dừng tính thời gian</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>0</x>
+        <y>10</y>
+        <width>1121</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../p1/a.png</pixmap>
+      </property>
+     </widget>
+     <zorder>label_6</zorder>
+     <zorder>layoutWidget</zorder>
+     <zorder>horizontalLayoutWidget_2</zorder>
+     <zorder>comboBoxTime</zorder>
+     <zorder>btnApplyTime</zorder>
+     <zorder>label_7</zorder>
+     <zorder>comboBoxStudy</zorder>
+    </widget>
+    <widget class="QWidget" name="page_SR">
+     <widget class="QLineEdit" name="SR">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>110</y>
+        <width>531</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>  Tìm nhạc nghe tăng khả năng học tập của bạn</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSR">
+      <property name="geometry">
+       <rect>
+        <x>750</x>
+        <y>110</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color:rgba(255, 255, 255, 1);
+    color: rgb(255, 245, 235);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+QPushButton:pressed {
+	background-color:rgba(200, 200, 200, 1);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="txtSRR">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>170</y>
+        <width>661</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>  Tìm thông tin bạn cần</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnSR_2">
+      <property name="geometry">
+       <rect>
+        <x>780</x>
+        <y>180</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	background-color:rgba(255, 255, 255, 1);
+    color: rgb(255, 245, 235);
+    border-radius: 15px;
+    padding: 5px;
+}
+
+
+QPushButton:pressed {
+	background-color:rgba(200, 200, 200, 1);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="icon">
+       <iconset>
+        <normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+      </property>
+      <property name="iconSize">
+       <size>
+        <width>30</width>
+        <height>30</height>
+       </size>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>1121</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../p1/a.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QWidget" name="browser_frame" native="true">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>240</y>
+        <width>1041</width>
+        <height>381</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color:rgba(255, 255, 255,0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    padding: 5px;
+</string>
+      </property>
+     </widget>
+     <zorder>label_5</zorder>
+     <zorder>SR</zorder>
+     <zorder>btnSR</zorder>
+     <zorder>txtSRR</zorder>
+     <zorder>btnSR_2</zorder>
+     <zorder>browser_frame</zorder>
+    </widget>
+    <widget class="QWidget" name="page_setting">
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>1121</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../p1/a.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_profile_pic">
+      <property name="geometry">
+       <rect>
+        <x>70</x>
+        <y>140</y>
+        <width>301</width>
+        <height>321</height>
+       </rect>
+      </property>
+      <property name="maximumSize">
+       <size>
+        <width>1024</width>
+        <height>1024</height>
+       </size>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius:20px</string>
+      </property>
+      <property name="lineWidth">
+       <number>2</number>
+      </property>
+      <property name="midLineWidth">
+       <number>1</number>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../image/taoanhdep_text_to_img_cCEgdTLiOg lớn.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>180</y>
+        <width>521</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Tên của bạn</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_2">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>230</y>
+        <width>521</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Sinh nhật của bạn</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_3">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>280</y>
+        <width>521</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>Email của bạn </string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_4">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>330</y>
+        <width>521</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="placeholderText">
+       <string>SĐT</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>82</x>
+        <y>491</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+	color: rgb(0, 0, 0);
+	background-color:rgba(255, 255, 255, 1);
+    border-radius: 15px;
+	color: rgba(0, 0, 0);
+    padding: 5px;
+}
+
+
+QPushButton:pressed {
+	background-color:rgba(200, 200, 200, 1);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string>tải ảnh đại diện </string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnUpdateInfo">
+      <property name="geometry">
+       <rect>
+        <x>350</x>
+        <y>560</y>
+        <width>281</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: rgba(143, 191, 224, 0.85); /* #8FBFE0 */
+    color: rgba(255, 255, 255, 1);               /* Trắng */
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    border: none;
+}
+
+QPushButton:pressed {
+    background-color: rgba(79, 122, 165, 1.0);  /* #4F7AA5 */
+}</string>
+      </property>
+      <property name="text">
+       <string>Cập nhật thông tin</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="lineEdit_5">
+      <property name="geometry">
+       <rect>
+        <x>440</x>
+        <y>380</y>
+        <width>521</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">
+QLineEdit {
+background-color:rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+QLineEdit:pressed {
+	background-color:rgba(255, 255, 257, 0.7);
+    border-style: inset;
+}</string>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="placeholderText">
+       <string>Đổi mật khẩu</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="page_translation">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>-10</x>
+        <y>0</y>
+        <width>1121</width>
+        <height>641</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap>../p1/a.png</pixmap>
+      </property>
+      <property name="scaledContents">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="input_text_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>150</y>
+        <width>521</width>
+        <height>461</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0.15);
+border-radius: 15px;
+color: #ffffff;</string>
+      </property>
+     </widget>
+     <widget class="QTextEdit" name="output_text_3">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>150</y>
+        <width>521</width>
+        <height>469</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: rgba(255, 255, 255, 0.15);
+border-radius: 15px;
+color: #ffffff;</string>
+      </property>
+      <property name="readOnly">
+       <bool>true</bool>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>583</x>
+        <y>102</y>
+        <width>111</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;</string>
+      </property>
+      <property name="text">
+       <string>Đích</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="dest_lang_combo">
+      <property name="geometry">
+       <rect>
+        <x>220</x>
+        <y>89</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #f5f0ff;
+border-radius: 15px;
+color:rgb(9, 9, 9)</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="src_lang_combo">
+      <property name="geometry">
+       <rect>
+        <x>770</x>
+        <y>90</y>
+        <width>301</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: #f5f0ff;
+border-radius: 15px;
+color: rgb(12, 12, 12);</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>100</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">background-color: none;</string>
+      </property>
+      <property name="text">
+       <string>Nguồn</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QWidget" name="horizontalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1111</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="10,10,10,10,10">
+     <property name="spacing">
+      <number>134</number>
+     </property>
+     <property name="topMargin">
+      <number>21</number>
+     </property>
+     <item>
+      <widget class="QPushButton" name="btnNavHome">
+       <property name="styleSheet">
+        <string notr="true">border:none;
+background-color: none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/home_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnNavSr">
+       <property name="styleSheet">
+        <string notr="true">border:none;
+background-color: none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnNavHow">
+       <property name="styleSheet">
+        <string notr="true">border:none;
+background-color: none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/g_translate_101dp_000000_FILL0_wght400_GRAD0_opsz48.png</normaloff>../image/g_translate_101dp_000000_FILL0_wght400_GRAD0_opsz48.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnNavSetting">
+       <property name="styleSheet">
+        <string notr="true">border:none;
+background-color: none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/settings_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="btnLogout">
+       <property name="styleSheet">
+        <string notr="true">border:none;
+background-color: none</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>../image/logout_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/logout_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>40</width>
+         <height>40</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+    <zorder>btnNavSr</zorder>
+    <zorder>btnNavHome</zorder>
+    <zorder>btnNavSetting</zorder>
+    <zorder>btnNavHow</zorder>
+    <zorder>btnLogout</zorder>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
