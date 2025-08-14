@@ -214,7 +214,7 @@ class SubtitleDialog(QDialog):
         super().__init__()
 
         # Tải giao diện từ file .ui
-        uic.loadUi("ui/subtitle_dialog.ui", self)
+        uic.loadUi("ZenTask/ui/subtitle_dialog.ui", self)
         self.setWindowTitle("Ứng Dụng Tạo Phụ Đề Video")
 
         self.current_video_path = None
@@ -766,7 +766,7 @@ class FlashcardXacNhan(QDialog):
     """
     def __init__(self, message, parent=None):
         super().__init__(parent)
-        self.ui = uic.loadUi("ui/Flashcard_Confirm_Popup.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/Flashcard_Confirm_Popup.ui", self)
         self.setModal(True)
 
         self.ui.labelMessage.setText(message)
@@ -782,7 +782,7 @@ class FlashcardThemSua(QDialog):
 
     def __init__(self, flashcard_to_edit=None, parent=None):
         super().__init__(parent)
-        self.ui = uic.loadUi("ui/Flashcard_AddEdit_Popup.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/Flashcard_AddEdit_Popup.ui", self)
         
         self.flashcard_to_edit = flashcard_to_edit
         self.edited_flashcard = None
@@ -941,7 +941,7 @@ class FlashcardQuanLy(QDialog):
     """
     def __init__(self, user_id, db_instance, parent=None):
         super().__init__(parent)
-        self.ui = uic.loadUi("ui/Flashcard_Main_Popup.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/Flashcard_Main_Popup.ui", self)
 
         self.user_id = user_id
         self.db = db_instance
@@ -1139,7 +1139,7 @@ class FlashcardHoc(QDialog):
     """
     def __init__(self, flashcards_to_study, user_id, db_instance, parent=None):
         super().__init__(parent)
-        self.ui = uic.loadUi("ui/Flashcard_Study_Popup.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/Flashcard_Study_Popup.ui", self)
         self.anim1 = None # Khởi tạo các biến animation là None
         self.anim2 = None
         self.original_card_geometry = None # Đảm bảo biến này được khởi tạo
@@ -1333,7 +1333,7 @@ class Nhap(QDialog):
         super().__init__(parent)
         self.resize(600, 600)
         self.move(90, 100)
-        uic.loadUi("ui/poppup2.ui", self)
+        uic.loadUi("ZenTask/ui/poppup2.ui", self)
         self.can_ve: QLabel = self.findChild(QLabel, "drawing_canvas")
         self.can_ve.setMouseTracking(True)
         self.can_ve.setCursor(Qt.CursorShape.CrossCursor)
@@ -1411,7 +1411,7 @@ class Nhap(QDialog):
 class MayTinh(QDialog):
     def __init__(self):
         super().__init__()
-        uic.loadUi("ui/popup.ui", self)
+        uic.loadUi("ZenTask/ui/popup.ui", self)
         self.resize(600, 600)
         self.move(9000, 10)
         self.dang_o_ben_phai = False
@@ -1485,7 +1485,7 @@ class MayTinh(QDialog):
 class TrangChu(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.ui = uic.loadUi("ui/untitled.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/untitled.ui", self)
         self.hop_thong_bao = QMessageBox()
         self.selected_profile_image_path_temp = None
         self.current_user_data = None
@@ -2094,7 +2094,7 @@ class TrangChu(QMainWindow):
 class DangNhap(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.ui = uic.loadUi("ui/login.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/login.ui", self)
         self.hop_thong_bao = QMessageBox()
         self.ui.btnLogin.clicked.connect(self.xu_ly_dang_nhap)
         self.ui.btnLo.clicked.connect(self.chuyen_dang_ky)
@@ -2192,7 +2192,7 @@ class DangNhap(QMainWindow):
 class DangKy(QMainWindow):
     def __init__(self):
         super().__init__()
-        self.ui = uic.loadUi("ui/register.ui", self)
+        self.ui = uic.loadUi("ZenTask/ui/register.ui", self)
         self.hop_thong_bao = QMessageBox()
         self.ui.btnRegister.clicked.connect(self.xu_ly_dang_ky)
         self.ui.btnLoo.clicked.connect(self.chuyen_dang_nhap)
