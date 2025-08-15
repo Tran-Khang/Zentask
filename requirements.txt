@@ -1,0 +1,9 @@
+pygame
+whisper
+pytz
+srt
+pyttsx3
+pydub
+edge-tts
+deep-translator
+langdetect
