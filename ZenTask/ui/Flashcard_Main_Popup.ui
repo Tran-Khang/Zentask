@@ -28,7 +28,7 @@ QLineEdit#search_input {
     border-radius: 14px;
     padding: 14px;
     font-size: 16px;
-    color: rgba(71, 85, 105, 1);
+    color: rgb(0, 0, 0);
 }
 
 QLineEdit#search_input:focus {
@@ -42,7 +42,7 @@ QLabel#total_cards, QLabel#learned_cards, QLabel#new_cards {
     border: 1px solid rgba(147, 165, 207, 0.2);
     border-radius: 10px;
     padding: 12px;
-    color: rgba(71, 85, 105, 1);
+    color: rgb(0, 0, 0);
     font-weight: 500;
 }
 
@@ -52,7 +52,7 @@ QPushButton#add_btn, QPushButton#edit_btn, QPushButton#delete_btn {
     border-radius: 12px;
     padding: 12px 24px;
     font-weight: 500;
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
 }
 
 QPushButton#add_btn {

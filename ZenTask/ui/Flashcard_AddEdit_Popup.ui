@@ -27,7 +27,7 @@ QTextEdit#front_content, QTextEdit#back_content {
     border-radius: 14px;
     padding: 16px;
     font-size: 16px;
-    color: rgba(71, 85, 105, 1);
+    color: rgb(0, 0, 0);
     min-height: 150px;
 }
 
@@ -40,7 +40,7 @@ QPushButton#add_image_btn {
     background-color: rgba(255, 255, 255, 0.85);
     border: 2px dashed rgba(147, 165, 207, 0.4);
     border-radius: 12px;
-    color: rgba(147, 165, 207, 1);
+    color: rgb(0, 0, 0);
     padding: 24px;
     font-size: 14px;
 }
@@ -54,7 +54,7 @@ QPushButton#save_btn {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                 stop:0 rgba(147, 165, 207, 0.8),
                 stop:1 rgba(255, 182, 193, 0.7));
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 14px;
     padding: 14px 32px;

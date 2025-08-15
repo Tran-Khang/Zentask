@@ -2032,7 +2032,7 @@ class TrangChu(QMainWindow):
 
         # Tải UI của dialog từ file .ui
         self.dialog = QDialog(self)
-        uic.loadUi("ui/add_method_dialog.ui", self.dialog)
+        uic.loadUi("ZenTask/add_method_dialog.ui", self.dialog)
 
         # Liên kết các widget từ UI dialog
         self.ten_phuong_phap_input = self.dialog.lineEdit_tenPhuongPhap

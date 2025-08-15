@@ -35,7 +35,7 @@ QLabel#card_content {
     border-radius: 12px;
     padding: 24px;
     font-size: 18px;
-    color: rgba(71, 85, 105, 1);
+    color: rgb(0, 0, 0);
 }
 
 /* Navigation buttons */
@@ -58,7 +58,7 @@ QPushButton#know_btn {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                 stop:0 rgba(134, 239, 172, 0.8),
                 stop:1 rgba(74, 222, 128, 0.7));
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 12px;
     padding: 12px 24px;
@@ -69,7 +69,7 @@ QPushButton#dont_know_btn {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                 stop:0 rgba(252, 165, 165, 0.8),
                 stop:1 rgba(239, 68, 68, 0.7));
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 12px;
     padding: 12px 24px;

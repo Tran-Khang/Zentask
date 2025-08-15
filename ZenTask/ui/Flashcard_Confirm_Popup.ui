@@ -23,7 +23,7 @@
 }
 
 QLabel#warning_title {
-    color: rgba(120, 113, 108, 1);
+    ccolor: rgb(0, 0, 0);
     font-size: 22px;
     font-weight: 600;
     margin: 20px;
@@ -42,7 +42,7 @@ QPushButton#confirm_btn {
     background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
                 stop:0 rgba(252, 165, 165, 0.8),
                 stop:1 rgba(239, 68, 68, 0.7));
-    color: rgba(255, 255, 255, 1);
+    color: rgb(0, 0, 0);
     border: none;
     border-radius: 12px;
     padding: 14px 28px;
@@ -52,7 +52,7 @@ QPushButton#confirm_btn {
 
 QPushButton#cancel_btn {
     background-color: rgba(255, 255, 255, 0.9);
-    color: rgba(147, 165, 207, 1);
+    color: rgb(0, 0, 0);
     border: 1px solid rgba(147, 165, 207, 0.4);
     border-radius: 12px;
     padding: 14px 28px;

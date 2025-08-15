@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>688</width>
-    <height>823</height>
+    <width>1078</width>
+    <height>842</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -27,7 +27,7 @@
      <string notr="true">background-color: rgba(253, 176, 187);</string>
     </property>
     <property name="currentIndex">
-     <number>1</number>
+     <number>0</number>
     </property>
     <widget class="QWidget" name="page_home">
      <widget class="QWidget" name="horizontalLayoutWidget_2">

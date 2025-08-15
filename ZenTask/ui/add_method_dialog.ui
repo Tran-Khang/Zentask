@@ -25,7 +25,7 @@
 }
 
 QLabel {
-    color: rgba(71, 85, 105, 1);
+    color: rgb(0, 0, 0);
     font-weight: 600;
     font-size: 14px;
 }
@@ -50,7 +50,7 @@ QTextEdit {
     border-radius: 12px;
     padding: 12px;
     font-size: 14px;
-    color: rgba(71, 85, 105, 1);
+    color: rgb(0, 0, 0);
 }
 
 QTextEdit:focus {
