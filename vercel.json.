@@ -1,14 +1,23 @@
 {
+  "version": 2,
   "builds": [
-    {            
-      "src": "*.py",
+    {
+      "src": "Zentask/main.py",
       "use": "@vercel/python"
     }
   ],
   "routes": [
     {
+      "src": "/static/image/(.*)",
+      "dest": "/Zentask/image/$1"
+    },
+    {
+      "src": "/static/music/(.*)",
+      "dest": "/Zentask/music/$1"
+    },
+    {
       "src": "/(.*)",
-      "dest": "/main.py"
+      "dest": "Zentask/main.py"
     }
   ]
 }
