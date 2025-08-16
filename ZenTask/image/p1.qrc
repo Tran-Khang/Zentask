@@ -1,8 +1,0 @@
-<RCC>
-  <qresource prefix="newPrefix">
-    <file>hình nền.png</file>
-  </qresource>
-  <qresource prefix="newPrefix">
-    <file>hình nền.png</file>
-  </qresource>
-</RCC>

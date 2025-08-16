@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>677</width>
+    <height>734</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgba(248, 250, 252, 0.95),
+                stop:0.5 rgba(241, 245, 249, 0.9),
+                stop:1 rgba(255, 251, 235, 0.9));
+    border-radius: 20px;
+}
+
+QLineEdit#search_input {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(147, 165, 207, 0.3);
+    border-radius: 14px;
+    padding: 14px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+QLineEdit#search_input:focus {
+    border: 2px solid rgba(165, 142, 251, 0.5);
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+/* Statistics labels */
+QLabel#total_cards, QLabel#learned_cards, QLabel#new_cards {
+    background-color: rgba(255, 255, 255, 0.85);
+    border: 1px solid rgba(147, 165, 207, 0.2);
+    border-radius: 10px;
+    padding: 12px;
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+}
+
+/* Action buttons */
+QPushButton#add_btn, QPushButton#edit_btn, QPushButton#delete_btn {
+    border: none;
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+QPushButton#add_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(134, 239, 172, 0.8),
+                stop:1 rgba(74, 222, 128, 0.7));
+}
+
+QPushButton#edit_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(147, 165, 207, 0.8),
+                stop:1 rgba(165, 142, 251, 0.7));
+}
+
+QPushButton#delete_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(252, 165, 165, 0.8),
+                stop:1 rgba(239, 68, 68, 0.7));
+}</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="2" column="0">
+    <widget class="QLineEdit" name="lineEditSearch">
+     <property name="placeholderText">
+      <string>Tìm kiếm flashcard đã có</string>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="3">
+    <widget class="QPushButton" name="pushButtonSearch">
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</normaloff>../image/search_24dp_000000_FILL0_wght400_GRAD0_opsz24.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="0" column="0" colspan="4">
+    <widget class="QLabel" name="label">
+     <property name="text">
+      <string>Quản lý flashcard</string>
+     </property>
+    </widget>
+   </item>
+   <item row="10" column="0" colspan="4">
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonAdd">
+       <property name="text">
+        <string>Thêm</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonEdit">
+       <property name="text">
+        <string>Sửa</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonDelete">
+       <property name="text">
+        <string>Xoá</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonStudy">
+       <property name="text">
+        <string>Học</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="labelStudyMode">
+       <property name="text">
+        <string>Chế độ học </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QComboBox" name="comboBoxStudyMode"/>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCloseMain">
+       <property name="text">
+        <string>Đóng</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="0" rowspan="4" colspan="4">
+    <widget class="QGroupBox" name="groupBox">
+     <property name="title">
+      <string>Thống kê</string>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="0,70">
+          <item>
+           <widget class="QLabel" name="labelTextTotalCards">
+            <property name="text">
+             <string>Tổng số thẻ:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelValueTotalCards">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="30,70">
+          <item>
+           <widget class="QLabel" name="labelTextKnownCards">
+            <property name="text">
+             <string>Đã thuộc :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelValueKnownCards">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_8" stretch="30,70">
+          <item>
+           <widget class="QLabel" name="labelTextUnknownCards">
+            <property name="text">
+             <string>Chưa thuộc:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelValueUnknownCards">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_9" stretch="30,70">
+          <item>
+           <widget class="QLabel" name="labelTextNewCards">
+            <property name="text">
+             <string>Thẻ mới :</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="labelValueNewCards">
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item row="3" column="0" colspan="4">
+    <widget class="QTableWidget" name="tableWidgetFlashcards">
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>98</number>
+     </attribute>
+    </widget>
+   </item>
+   <item row="2" column="1">
+    <widget class="QComboBox" name="comboBoxFilterStatus"/>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

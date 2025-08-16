@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>356</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1,
+                stop:0 rgba(254, 249, 195, 0.9),
+                stop:1 rgba(254, 240, 138, 0.8));
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+QLabel#warning_title {
+    ccolor: rgb(0, 0, 0);
+    font-size: 22px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+QLabel#warning_message {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgba(100, 116, 139, 1);
+    font-size: 15px;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 12px;
+}
+
+QPushButton#confirm_btn {
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1,
+                stop:0 rgba(252, 165, 165, 0.8),
+                stop:1 rgba(239, 68, 68, 0.7));
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 500;
+    margin: 6px;
+}
+
+QPushButton#cancel_btn {
+    background-color: rgba(255, 255, 255, 0.9);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgba(147, 165, 207, 0.4);
+    border-radius: 12px;
+    padding: 14px 28px;
+    font-weight: 500;
+    margin: 6px;
+}
+
+QPushButton#cancel_btn:hover {
+    background-color: rgba(240, 249, 255, 0.9);
+    border: 1px solid rgba(147, 165, 207, 0.6);
+}
+</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <item>
+    <widget class="QLabel" name="labelIcon">
+     <property name="font">
+      <font>
+       <pointsize>34</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>                              Cảnh báo</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QLabel" name="labelMessage">
+     <property name="font">
+      <font>
+       <pointsize>30</pointsize>
+      </font>
+     </property>
+     <property name="text">
+      <string>Bạn có chắc chắn muốn thay đổi này không</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="pushButtonConfirm">
+       <property name="text">
+        <string>Xác nhận </string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="pushButtonCancelConfirm">
+       <property name="text">
+        <string>Huỷ</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
